@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+.search-container {
+  background-image: url("https://ramjibs.github.io/bookstore/asset/bgimg.jpg");
+  font: "nyt-cheltenham", "georgia", "times new roman", times, serif;
+  font-size: 30px;
+  width: 100%;
+  height: 70vh;
+  max-width: 100%;
+  background-size: cover;
+  border: none;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app-header {
+  color: rgb(255, 255, 255);
+  font: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar select {
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+  border: none;
+  padding: 15px;
+}
+.search-bar input {
+  border: 0;
+  outline: none;
+  font-size: 2rem;
+  padding: 15px;
+}
+.search-bar button {
+  height: 100%;
+  background-color: rgb(2, 120, 120);
+  color: rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0 15px 15px 0;
+  padding: 15px;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.search-bar button:hover {
+  background-color: rgb(5, 110, 110);
+}
+.overview-control {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  cursor: pointer;
+}
+select:hover {
+  cursor: pointer;
+}
+
+.genres {
+  font-size: 20px;
+  background-color: rgb(223, 218, 218);
+  display: block;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+}
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.innerbody {
+  width: 250px;
+  height: 350px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.innerbody:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+.modal_content {
+  display: inline-grid;
+  grid-template-columns: 1.8fr 1.2fr;
+  grid-gap: 10px;
+}
+.close {
+  float: right;
+  display: block;
+  background-color: rgb(247, 5, 5);
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border-style: none;
+  margin-right:15px;
+  margin-top: 10px;
+  font-size: large;
+  overflow: scroll;
+  cursor: pointer;
+}
+.model-img {
+  width: 250px;
+  height: 320px;
+}
+.similarbooks {
+  width: 500px;
+}
+.modal-similar_books {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 75vh;
+  overflow: scroll;
+  box-shadow: inset 0 0 10px #000000;
+  border-radius: 20px 20px 0 0;
+}
+.book_title {
+  margin: 0px;
+  margin-left: 20px;
+}
+.model_similer_books_div {
+  background-color: rgb(255, 99, 71);
+  width: 45%;
+  height: 40vh;
+  margin: 10px;
+  display:flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.246);
+}
+
+.book_content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.book_details {
+  display: flex;
+}
+.bookinfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.book_data {
+  color: rgb(134, 123, 123);
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+label {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.bookimgdiv {
+  margin: 20px;
+  width: 250px;
+  height: 320px;
+}
+.modal {
+  background-color: rgb(255, 255, 255);
+  /* width: 75%; */
+  height:80%;
+  width:75%;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  overflow: scroll;
+  border-radius: 20px;
+  
+}
+.error {
+  height: 500px;
+  width: 500px;
+  margin-left: 30%;
+}
+a {
+  margin: 5px;
+  font-size: medium;
+}
+.overlay {
+  opacity: 0.8;
+  background-color: #ccc;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 55;
+}
+
+.mainCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="api.css" />
+  </head>
+  <body id="body">
+    <div class="search-container" id="search-container">
+      <h1 class="app-header">New York Times Book Store</h1>
+      <div class="search-bar">
+        <select id="search-type">
+          <option selected value="bestselling" disabled>Choose any</option>
+          <option value="author">Author</option>
+          <option value="title">Book Title</option>
+          <option value="publisher">Publisher</option>
+        </select>
+        <div class="main_searchbar">
+          <input class="search-bar" id="search-bar" type="text" />
+          <div class="simlerBooks_search"></div>
+        </div>
+
+        <button>Try my luck</button>
+      </div>
+    </div>
+    <div id="overview-container" class="overview-container">
+      <div class="overview-control">
+        <label>Genres</label>
+        <select name="genres" id="genres" class="select-genre"></select>
+        <label>Closest Publish from</label>
+        <input type="date" id="publish_date" class="publish-date" />
+      </div>
+    </div>
+    <h1 id="loader" style="display: block; text-align: center">Loading...</h1>
+    <section id="dashes"></section>
+
+    <!-- <div class="modal" id="modal"></div> -->
+    <!-- <div id="overlay"></div> -->
+    <!-- <div class="modal" id="modal">
+        <button class="close">x</button>
+        <div class="modal_content">
+            <div class="book_content">
+                <div class="book_details">            
+                    <div class="bookimgdiv">
+                        <img  width="250px" height="320px" class="model-img" alt="book">
+                    </div>
+                    <div class="bookinfo">
+                        <h2>Book Details</h2>
+                        <label for="title" class="book_data">Title :</label>
+                        <label id="title" class="book_value">Title</label>
+                        <label for="author" class="book_data">Author :</label>
+                        <label id="author" class="book_value">Author</label>
+                        <label for="contributor" class="book_data">Contributor :</label>
+                        <label id="contributor" class="book_value">Contributor</label>
+                        <label for="publisher" class="book_data">Publisher :</label>
+                        <label id="publisher" class="book_value">Publisher</label>
+                        <label for="description" class="book_data">Description :</label>
+                        <label id="description">Description</label>                      
+                    </div>
+                </div>
+                <div class="buy-book">
+                    <h2>Buy Book</h2>
+                    <a class="Amazon" >Amazon</a>
+                    <a class="Apple">Apple books</a>
+                    <a class="Barnes">Barnes and Noble</a>
+                    <a class="Books-A-Million">Books-A-Million</a>
+                    <a class="Bookshop" >Bookshop</a>
+                    <a class="IndieBound" >IndieBound</a>
+                </div>
+                <div class="book_review">
+                    <h2>Book Review</h2>
+                    <div class="review_link"></div>
+                </div>
+            </div>
+            <div class="similarbooks">
+                <h2>Similar Books</h2>
+                <div class="modal-similar_books"></div>
+            </div>
+        </div>
+    </div> -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
